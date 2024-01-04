@@ -2,6 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App.tsx"
 import Signin from "./routes/Signin.tsx"
+import Nav from "./components/Nav.tsx"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,11 +12,17 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <Nav/>,
+    // children: [
+    //   { 
+    //     path: "/home", 
+    //     element: <App/>
+    //   }
+    // ]
   },
   {
-    path: "/signin",
-    element: <Signin />
+    path: "/home",
+    element: <App />
   }
 ])
 

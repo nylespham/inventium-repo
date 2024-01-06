@@ -9,18 +9,18 @@ Integrated with Google spreadsheet, users can export report files to their perso
 ### Frameworks and Technologies Used:
 
 React, Nodejs, MongoDB, Redis, Rabbit MQ, Amazon S3
-<img src="react.png" style="width: 50px, height: 50px" alt="react">
-<img src="nodejs.png" style="width: 50px, height: 50px" alt="nodejs">
-<img src="mongodb.png" style="width: 50px, height: 50px" alt="mongo">
-<img src="rabbitmq.png" style="width: 50px, height: 50px" alt="mq">
-<img src="redis.png" style="width: 50px, height: 50px" alt="redis">
-<img src="s3.jpeg" style="width: 50px, height: 50px" alt="s3">
+<img src="react.png" style="width:50px, height:50px" alt="react">
+<img src="nodejs.png" style="width:50px, height:50px" alt="nodejs">
+<img src="mongodb.png" style="width:50px, height:50px" alt="mongo">
+<img src="rabbitmq.png" style="width: 50px, height:50px" alt="mq">
+<img src="redis.png" style="width:50px, height:50px" alt="redis">
+<img src="s3.jpeg" style="width:50px, height:50px" alt="s3">
 
 ### Promgramming Language:
 
 Typescript, Go
-<img src="typescript.png" style="width: 50px, height: 50px" alt="ts">
-<img src="go.png" style="width: 50px, height: 50px" alt="go">
+<img src="typescript.png" style="width:50px, height:50px" alt="ts">
+<img src="go.png" style="width:50px, height:50px" alt="go">
 
 ### Application Architecture Diagram
 

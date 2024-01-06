@@ -1,31 +1,36 @@
-# Inventium
-
-## Inventory Management Application
+# Inventium - Inventory Management Application
 
 Simplify the need for inventory and point of sales management. It helps businesses by providing the insights of revenue, sales, and inventory in one simple UI.
 
 Integrated with Google spreadsheet, users can export report files to their personal Google Account with ease.
 
-### Frameworks and Technologies Used:
+<h2>Frameworks and Technologies Used:</h2> 
 
-React, Nodejs, MongoDB, Redis, Rabbit MQ, Amazon S3
-<img src="react.png" style="width:50px, height:50px" alt="react">
-<img src="nodejs.png" style="width:50px, height:50px" alt="nodejs">
-<img src="mongodb.png" style="width:50px, height:50px" alt="mongo">
-<img src="rabbitmq.png" style="width: 50px, height:50px" alt="mq">
-<img src="redis.png" style="width:50px, height:50px" alt="redis">
-<img src="s3.jpeg" style="width:50px, height:50px" alt="s3">
+<p>React, Nodejs, MongoDB, Redis, Rabbit MQ, Amazon S3</p>
+<div>
+  <img src="react.png" style="width:75px; height:75px" alt="react">
+  <img src="nodejs.png" style="width:75px; height:75px" alt="nodejs">
+  <img src="mongodb.png" style="width:75px; height:75px" alt="mongo">
+  <img src="rabbitmq.png" style="width:75px; height:75px" alt="mq">
+  <img src="redis.png" style="width:75px; height:75px" alt="redis">
+  <img src="s3.jpeg" style="width:75px; height:75px" alt="s3">
+</div>
 
-### Promgramming Language:
 
-Typescript, Go
-<img src="typescript.png" style="width:50px, height:50px" alt="ts">
-<img src="go.png" style="width:50px, height:50px" alt="go">
+<h2>Promgramming Language:</h2> 
 
-### Application Architecture Diagram
+<p>Typescript, Go </p>
+<div>
+  <img src="typescript.png" style="width:75px; height:75px" alt="ts">
+  <img src="go.png" style="width:75px; height:75px" alt="go">
+</div>
 
-Inventium frontend microservices is powered by React, React Components and React Router. Backend microservices are written in mostly Typescript and powered by NodeJs. Some of them are in Go.
 
-Redis was utilized for frontend static html elements.
-MongoDB was used for most microservices, including login-oauth, reports, inventory, etc.
+<h2>Application Architecture Diagram</h2>
+
+<p>Inventium frontend microservices is powered by React, React Components and React Router. Backend microservices are written in mostly Typescript and powered by NodeJs. Some of them are in Go.</p>
+
+<p>Redis was utilized for frontend static html elements.</p>
+<p>MongoDB was used for most microservices, including login-oauth, reports, inventory, etc.</p>
+</br>
 <img src="inventium.drawio.png" alt="diagram">

@@ -2,58 +2,13 @@ import { NavLink } from "react-router-dom";
 
 export default function Nav(){
     return (
-            <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style={{"width": "280px"}}>
-                <NavLink to={"/"} className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg className="bi pe-none me-2" width="40" height="32"><use xlinkHref="#bootstrap"/></svg>
-                <span className="fs-4">Sidebar</span>
-                </NavLink>
-                <hr/>
-                <ul className="nav nav-pills flex-column mb-auto">
-                <li className="nav-item">
-                    <NavLink to={"/home"} className="nav-link active" aria-current="page">
-                    <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#home"/></svg>
-                    Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to={"/dashboard"} className="nav-link link-body-emphasis">
-                    <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#speedometer2"/></svg>
-                    Dashboard
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to={"/orders"} className="nav-link link-body-emphasis">
-                    <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#table"/></svg>
-                    Orders
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to={"/products"} className="nav-link link-body-emphasis">
-                    <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#grid"/></svg>
-                    Products
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to={"/customers"} className="nav-link link-body-emphasis">
-                    <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#people-circle"/></svg>
-                    Customers
-                    </NavLink>
-                </li>
-                </ul>
-                <hr/>
-                <div className="dropdown">
-                <NavLink to={"#"} className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2"/>
-                    <strong>mdo</strong>
-                </NavLink>
-                <ul className="dropdown-menu text-small shadow">
-                    <li><NavLink className="dropdown-item" to={"/projects"}>New project...</NavLink></li>
-                    <li><NavLink className="dropdown-item" to={"/settings"}>Settings</NavLink></li>
-                    <li><NavLink className="dropdown-item" to={"/profile"}>Profile</NavLink></li>
-                    <li><hr className="dropdown-divider"/></li>
-                    <li><NavLink className="dropdown-item" to={"/signout"}>Sign out</NavLink></li>
-                </ul>
-                </div>
-            </div>
+        <header className="d-flex justify-content-center py-3">
+          <ul className="nav nav-pills">
+            <li className="nav-item"><NavLink to={"/dashboard"} className="nav-link">Dashboard</NavLink></li>
+            <li className="nav-item"><NavLink to={"/inventory"} className="nav-link">Iventory</NavLink></li>
+            <li className="nav-item"><NavLink to={"/pos"} className="nav-link">POS</NavLink></li>
+            <li className="nav-item"><NavLink to={"/report"} className="nav-link">Report</NavLink></li>
+          </ul>
+        </header>
     )
 }

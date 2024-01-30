@@ -1,10 +1,11 @@
-import Nav from "../components/Nav.tsx"
+import Header from "../components/Header.tsx"
+import RecordHistory from "../components/RecordHistory.tsx"
 import SideBar from "../components/Sidebar.tsx"
 
 export default function Dashboard(){
     return (
         <>
-            <Nav />
+            <Header />
             <div className="container-fluid">
                 <div className="row">
                     <SideBar />
@@ -25,32 +26,11 @@ export default function Dashboard(){
 
                         <canvas className="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-                            <h2>Section title</h2>
-                            <div className="table-responsive small">
-                                <table className="table table-striped table-sm">
-                                <thead>
-                                    <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Header</th>
-                                    <th scope="col">Header</th>
-                                    <th scope="col">Header</th>
-                                    <th scope="col">Header</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                    <td>1,001</td>
-                                    <td>random</td>
-                                    <td>data</td>
-                                    <td>placeholder</td>
-                                    <td>text</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <RecordHistory />
                     </main>
                 </div>
             </div>
+
         </>
     )
 }

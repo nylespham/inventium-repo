@@ -5,8 +5,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-// import Iventory from "./routes/Inventory.tsx"
-// import Pos from "./routes/Pos.tsx"
+import Inventory from "./routes/Inventory.tsx"
+import Pos from "./routes/Pos.tsx"
 // import Report from "./routes/Report.tsx"
 // import Nav from "./components/Nav.tsx"
 import Dashboard from "./routes/Dashboard.tsx"
@@ -49,6 +49,14 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <Signin />
+  },
+  {
+    path: "/inventory",
+    element: <Inventory />
+  },
+  {
+    path: "/pos",
+    element: <Pos />
   }
 ])
 

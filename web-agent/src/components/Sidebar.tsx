@@ -1,3 +1,10 @@
+import { NavLink } from "react-router-dom";
+import inventory from "../assets/images/inventory.png";
+import report from "../assets/images/report.png";
+import pos from "../assets/images/pos.png";
+import revenue from "../assets/images/revenue.png";
+import dashboard from "../assets/images/dashboard.png";
+
 export default function SideBar(){
     return (
         <div className="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
@@ -9,48 +16,42 @@ export default function SideBar(){
                 <div className="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
                 <ul className="nav flex-column">
                     <li className="nav-item">
-                    <a className="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                        <svg className="bi"><use xlinkHref="#house-fill"/></svg>
+                    <NavLink className="nav-link d-flex align-items-center gap-2 active" aria-current="page" to={"/dashboard"}>
+                    <img src={dashboard} className="bi"></img>
                         Dashboard
-                    </a>
+                    </NavLink>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link d-flex align-items-center gap-2" href="#">
-                        <svg className="bi"><use xlinkHref="#file-earmark"/></svg>
-                        Orders
-                    </a>
+                    <NavLink className="nav-link d-flex align-items-center gap-2" to={"/pos"}>
+                    <img src={pos} className="bi"></img>
+                        Point of Sale
+                    </NavLink>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link d-flex align-items-center gap-2" href="#">
-                        <svg className="bi"><use xlinkHref="#cart"/></svg>
-                        Products
-                    </a>
+                    <NavLink className="nav-link d-flex align-items-center gap-2" to={"/inventory"}>
+                        <img src={inventory} className="bi"></img>
+                        Inventory
+                    </NavLink>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link d-flex align-items-center gap-2" href="#">
-                        <svg className="bi"><use xlinkHref="#people"/></svg>
-                        Customers
-                    </a>
+                    <NavLink className="nav-link d-flex align-items-center gap-2" to={"/revenue"}>
+                    <img src={revenue} className="bi"></img>
+                        Revenue
+                    </NavLink>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link d-flex align-items-center gap-2" href="#">
-                        <svg className="bi"><use xlinkHref="#graph-up"/></svg>
+                    <NavLink className="nav-link d-flex align-items-center gap-2" to={"/reports"}>
+                    <img src={report} className="bi"></img>
                         Reports
-                    </a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link d-flex align-items-center gap-2" href="#">
-                        <svg className="bi"><use xlinkHref="#puzzle"/></svg>
-                        Integrations
-                    </a>
+                    </NavLink>
                     </li>
                 </ul>
 
                 <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
                     <span>Saved reports</span>
-                    <a className="link-secondary" href="#" aria-label="Add a new report">
+                    <NavLink className="link-secondary" to={"/reports/new"} aria-label="Add a new report">
                     <svg className="bi"><use xlinkHref="#plus-circle"/></svg>
-                    </a>
+                    </NavLink>
                 </h6>
                 <ul className="nav flex-column mb-auto">
                     <li className="nav-item">
@@ -63,12 +64,6 @@ export default function SideBar(){
                     <a className="nav-link d-flex align-items-center gap-2" href="#">
                         <svg className="bi"><use xlinkHref="#file-earmark-text"/></svg>
                         Last quarter
-                    </a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link d-flex align-items-center gap-2" href="#">
-                        <svg className="bi"><use xlinkHref="#file-earmark-text"/></svg>
-                        Social engagement
                     </a>
                     </li>
                     <li className="nav-item">

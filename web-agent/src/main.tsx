@@ -5,40 +5,51 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import Iventory from "./routes/Inventory.tsx"
-import Pos from "./routes/Pos.tsx"
-import Report from "./routes/Report.tsx"
-import Nav from "./components/Nav.tsx"
+// import Iventory from "./routes/Inventory.tsx"
+// import Pos from "./routes/Pos.tsx"
+// import Report from "./routes/Report.tsx"
+// import Nav from "./components/Nav.tsx"
 import Dashboard from "./routes/Dashboard.tsx"
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Nav />,
+//     children: [
+//       {
+//         path: "/dashboard",
+//         element: <Dashboard />
+//       },
+//       {
+//         path: "/inventory",
+//         element: <Iventory />
+//       },
+//       {
+//         path: "/pos",
+//         element: <Pos />
+//       },
+//       {
+//         path: "/report",
+//         element: <Report />
+//       }
+//     ]
+//   },
+//   {
+//     path: "/signin",
+//     element: <Signin />
+//   }
+  
+// ])
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Nav />,
-    children: [
-      {
-        path: "/dashboard",
-        element: <Dashboard />
-      },
-      {
-        path: "/inventory",
-        element: <Iventory />
-      },
-      {
-        path: "/pos",
-        element: <Pos />
-      },
-      {
-        path: "/report",
-        element: <Report />
-      }
-    ]
+    path: "/dashboard",
+    element: <Dashboard />
   },
   {
     path: "/signin",
     element: <Signin />
   }
-  
 ])
 
 

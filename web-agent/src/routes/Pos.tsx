@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import SideBar from "../components/Sidebar";
 import RecordHistory from "../components/RecordHistory";
-import Chart from "../components/Chart";
 
 export default function Pos(){
     return (
@@ -24,9 +23,6 @@ export default function Pos(){
                             </button>
                             </div>
                         </div>
-
-                        {/* <canvas className="my-4 w-100" id="myChart" width="900" height="380"></canvas> */}
-                        <Chart />
                         <RecordHistory 
                         title="POS's List"/>
                     </main>

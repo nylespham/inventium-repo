@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import inventory from "../assets/images/inventory.png";
-import report from "../assets/images/report.png";
-import pos from "../assets/images/pos.png";
-import revenue from "../assets/images/revenue.png";
-import dashboard from "../assets/images/dashboard.png";
+import inventory from "../../assets/images/inventory.png";
+import report from "../../assets/images/report.png";
+import pos from "../../assets/images/pos.png";
+import revenue from "../../assets/images/revenue.png";
+import dashboard from "../../assets/images/dashboard.png";
 
 export default function SideBar(){
     return (

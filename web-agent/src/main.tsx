@@ -7,9 +7,10 @@ import {
 } from "react-router-dom"
 import Inventory from "./routes/Inventory.tsx"
 import Pos from "./routes/Pos.tsx"
-// import Report from "./routes/Report.tsx"
+import Report from "./routes/Report.tsx"
 // import Nav from "./components/Nav.tsx"
 import Dashboard from "./routes/Dashboard.tsx"
+import Revenue from "./routes/Revenue.tsx"
 
 // const router = createBrowserRouter([
 //   {
@@ -57,6 +58,14 @@ const router = createBrowserRouter([
   {
     path: "/pos",
     element: <Pos />
+  },
+  {
+    path: "/revenue",
+    element: <Revenue />
+  },
+  {
+    path: "/reports",
+    element: <Report />
   }
 ])
 

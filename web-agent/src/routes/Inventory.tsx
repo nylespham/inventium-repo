@@ -1,6 +1,7 @@
-import Header from "../components/Header";
-import SideBar from "../components/Sidebar";
-import RecordHistory from "../components/RecordHistory";
+import ColumnChart from "../components/charts/ColumnChart";
+import Header from "../components/navigation/Header";
+import SideBar from "../components/navigation/Sidebar";
+import RecordHistory from "../components/tables/RecordHistory";
 
 export default function Iventory(){
     return (
@@ -17,14 +18,20 @@ export default function Iventory(){
                                 <button type="button" className="btn btn-sm btn-outline-secondary">Share</button>
                                 <button type="button" className="btn btn-sm btn-outline-secondary">Export</button>
                             </div>
-                            <button type="button" className="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
+                            <button id="graph" type="button" className="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
                                 <svg className="bi"><use xlinkHref="#calendar3"/></svg>
                                 This week
                             </button>
                             </div>
                         </div>
-
-                        <RecordHistory />
+                        
+                        <ColumnChart />
+                        <hr className="example-divider"/>
+                        <RecordHistory 
+                            title="Today's Inventory Exports"
+                            headers={["Test", "Dump", "Test", "Test", "Test"]}
+                            data={[1000,2656,34545,4353,5535]}
+                        />
                     </main>
                 </div>
             </div>

@@ -1,3 +1,6 @@
+import Row from "./Rows";
+import TableHeader from "./TableHeader";
+
 export default function RecordHistory(props: any){
     return (
       <>
@@ -5,13 +8,9 @@ export default function RecordHistory(props: any){
         <div className="table-responsive small">
             <table className="table table-striped table-sm">
             <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                </tr>
+                {props.headers.map((header: any) => (
+                    <TableHeader header={header} />
+                ))}
             </thead>
             <tbody>
                 <tr>
@@ -27,6 +26,11 @@ export default function RecordHistory(props: any){
                 <td>data</td>
                 <td>placeholder</td>
                 <td>text</td>
+                </tr>
+                <tr>
+                {props.data.map((d: Number) => (
+                    <Row data={d} />
+                ))}
                 </tr>
             </tbody>
         </table>

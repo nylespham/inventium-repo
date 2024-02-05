@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import { body } from "express-validator";
 import { validateRequest, BadRequestError } from "@ticket101/common";
+import jwt from "jsonwebtoken";
 
 const router = express.Router();
 

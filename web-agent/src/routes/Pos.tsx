@@ -1,6 +1,7 @@
 import Header from "../components/navigation/Header";
 import SideBar from "../components/navigation/Sidebar";
 import RecordHistory from "../components/tables/RecordHistory";
+import BarChart from "../components/charts/BarChart";
 
 export default function Pos(){
     return (
@@ -23,8 +24,13 @@ export default function Pos(){
                             </button>
                             </div>
                         </div>
+                        <BarChart />
+                        <hr className="example-divider"/>
                         <RecordHistory 
-                        title="POS's List"/>
+                        title="POS's List"
+                        headers={["Id", "Name", "Location", "Revenue Earned", "Total Orders"]}
+                        data={["i9m2ns0098","Coffee Street Seller","Ho Chi Minh, Vietnam",34545,4353,5535]}
+                        />
                     </main>
                 </div>
             </div>

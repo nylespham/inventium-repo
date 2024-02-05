@@ -11,36 +11,8 @@ import Report from "./routes/Report.tsx"
 // import Nav from "./components/Nav.tsx"
 import Dashboard from "./routes/Dashboard.tsx"
 import Revenue from "./routes/Revenue.tsx"
+import Import from "./routes/Inventory/Import.tsx"
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Nav />,
-//     children: [
-//       {
-//         path: "/dashboard",
-//         element: <Dashboard />
-//       },
-//       {
-//         path: "/inventory",
-//         element: <Iventory />
-//       },
-//       {
-//         path: "/pos",
-//         element: <Pos />
-//       },
-//       {
-//         path: "/report",
-//         element: <Report />
-//       }
-//     ]
-//   },
-//   {
-//     path: "/signin",
-//     element: <Signin />
-//   }
-  
-// ])
 
 const router = createBrowserRouter([
   {
@@ -53,7 +25,21 @@ const router = createBrowserRouter([
   },
   {
     path: "/inventory",
-    element: <Inventory />
+    element: <Inventory />,
+    children: [
+      {
+        path: "/inventory/imports",
+        element: <Import />
+      },
+      {
+        path: "/inventory/exports",
+        element: <Inventory />
+      },
+      {
+        path: "/inventory/summary",
+        element: <Inventory /> 
+      }
+    ]
   },
   {
     path: "/pos",

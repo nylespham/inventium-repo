@@ -1,9 +1,8 @@
-import { Scatter } from "react-chartjs-2";
-import ColumnChart from "../components/charts/ColumnChart";
 import Header from "../components/navigation/Header";
 import SideBar from "../components/navigation/Sidebar";
 import RecordHistory from "../components/tables/RecordHistory";
 import ScatterChart from "../components/charts/ScatterChart";
+import PieChart from "../components/charts/PieChart";
 
 export default function Revenue(){
     return (
@@ -34,6 +33,8 @@ export default function Revenue(){
                             headers={["Test", "Dump", "Test", "Test", "Test"]}
                             data={[1000,2656,34545,4353,5535]}
                         />
+                        <hr className="example-divider"/>
+                        <PieChart />
                     </main>
                 </div>
             </div>

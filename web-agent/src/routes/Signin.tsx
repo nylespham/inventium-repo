@@ -1,5 +1,4 @@
-import { redirect } from "react-router-dom"
-import signin from "../services/signin"
+import { signin } from "../services/signin"
 import { useState } from "react"
 
 export default function Signin(){
@@ -8,10 +7,9 @@ export default function Signin(){
         password: ""
     })
 
-    function handleLogin(e: any) {
-        const res = signin(formData.username, formData.password)
+    async function handleLogin(e: any) {
+        const res = await signin(formData.username, formData.password)
         console.log(res)
-        redirect("/dashboard")
     }
     return (
     <div className="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabIndex={-1} role="dialog" id="modalSignin">

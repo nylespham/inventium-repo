@@ -2,6 +2,8 @@ import ColumnChart from "../components/charts/BarChart";
 import Header from "../components/navigation/Header";
 import SideBar from "../components/navigation/Sidebar";
 import RecordHistory from "../components/tables/RecordHistory";
+import Tab from "../components/navigation/Tab";
+import { NavLink } from "react-router-dom";
 
 export default function Iventory(){
     return (
@@ -15,8 +17,8 @@ export default function Iventory(){
                             <h1 className="h2">Inventory</h1>
                             <div className="btn-toolbar mb-2 mb-md-0">
                             <div className="btn-group me-2">
-                                <button type="button" className="btn btn-sm btn-primary">Export Inventory</button>
-                                <button type="button" className="btn btn-sm btn-dark">Import Inventory</button>
+                                <NavLink to="/inventory/exports/new" type="button" className="btn btn-sm btn-primary">Export Inventory</NavLink>
+                                <NavLink to="/inventory/imports/new" type="button" className="btn btn-sm btn-dark">Import Inventory</NavLink>
                             </div>
                             <button id="graph" type="button" className="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
                                 <svg className="bi"><use xlinkHref="#calendar3"/></svg>
@@ -27,21 +29,11 @@ export default function Iventory(){
                         
                         <ColumnChart />
                         <hr className="example-divider"/>
-                        <ul className="nav nav-pills">
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Summary</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Exports</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Imports</a>
-                            </li>
-                        </ul>
+                        <Tab />
                         <RecordHistory 
                             title="Today's Inventory Exports"
-                            headers={["Test", "Dump", "Test", "Test", "Test"]}
-                            data={[1000,2656,34545,4353,5535]}
+                            headers={["ExportID", "PosID", "Product", "Created Date", "Status", "Quantity", "Unit"]}
+                            data={["EXP/POS004/001", "001", "Condensed Milk", "2024/02/06",<span className="badge text-bg-info">Processing</span>, 20,"units"]}
                         />
                     </main>
                 </div>

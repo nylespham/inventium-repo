@@ -1,5 +1,8 @@
 package main
 
-func routes() {
+import "github.com/gorilla/mux"
 
+func routes() {
+	r := mux.NewRouter()
+	r.HandleFunc("/api/inventory", InventoryHandler).Methods("GET")
 }

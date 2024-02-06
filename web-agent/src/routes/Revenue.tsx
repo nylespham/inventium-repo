@@ -34,7 +34,7 @@ export default function Revenue(){
                             data={[1000,2656,34545,4353,5535]}
                         />
                         <hr className="example-divider"/>
-                        <PieChart />
+                        {/* <PieChart /> */}
                     </main>
                 </div>
             </div>

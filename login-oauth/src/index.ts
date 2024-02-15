@@ -9,7 +9,7 @@ const start = async () => {
     // }
 
     try {
-        await mongoose.connect("mongodb+srv://nylespham:p0MAOpuIcriSu3NN@inventium.qpgk4db.mongodb.net");
+        await mongoose.connect(`mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}`);
         console.log("connected to mongodb");
     } catch (err) {
         console.error(err);

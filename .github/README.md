@@ -4,9 +4,9 @@ Simplify the need for inventory and point of sales management. It helps business
 
 Integrated with Google spreadsheet, users can export report files to their personal Google Account with ease.
 
-<h2>Frameworks and Technologies Used:</h2> 
+<h2>Frameworks and Technologies Used:</h2>
 
-<p>React, Nodejs, MongoDB, Redis, Rabbit MQ, Amazon S3</p>
+<p>Go, Htmx, MongoDB, PostgreSQL</p>
 <div>
   <img src="react.png" style="width:75px; height:75px" alt="react">
   <img src="nodejs.png" style="width:75px; height:75px" alt="nodejs">
@@ -16,15 +16,13 @@ Integrated with Google spreadsheet, users can export report files to their perso
   <img src="s3.jpeg" style="width:75px; height:75px" alt="s3">
 </div>
 
+<h2>Promgramming Language:</h2>
 
-<h2>Promgramming Language:</h2> 
-
-<p>Typescript, Go </p>
+<p>Go </p>
 <div>
   <img src="typescript.png" style="width:75px; height:75px" alt="ts">
   <img src="go.png" style="width:75px; height:75px" alt="go">
 </div>
-
 
 <h2>Application Architecture Diagram</h2>
 
